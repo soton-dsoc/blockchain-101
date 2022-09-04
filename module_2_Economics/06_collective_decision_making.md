@@ -1,0 +1,1 @@
+# Lecture 6: Collective Decision Making
