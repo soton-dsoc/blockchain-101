@@ -87,15 +87,14 @@ A cipher is therefore composed of two functions: <em>encryption</em> turns a pla
 
 - Symmetric encryption: the key used to decrypt is the same as the key used to encrypt
 
-> briefly explain end demonstrate an exampe of Caesar Cipher
-
-
 - Asymmetric encryption: the key used to decrypt is different from the key used to encrypt
 
 ### Symmetric encryption
 
 Some functions that, given some data and a key, produces a hash that is 
 reversible given the original key.
+
+> briefly explain end demonstrate an exampe of Caesar Cipher
 
 **Example**
 ```
@@ -130,7 +129,13 @@ Key:   1100  |          1100
 **TODO: Add examples in Rust**
 
 ### Asymmetric encryption 
-The data is encrypted with the public known key (public key) and can only be decrypted by a mathematically connected private key that is not revealed to public.
+
+In asymmetric encryption, there are two keys: one to encrypt
+and another to decrypt: 
+
+<em>Public Key:</em> Encryption - is generally considered publicly available to anyone who wants to send encrypted messages
+
+<em>Private Key:</em> Decription - must remain secret
 
 * User A (A) generated a pair of key: Public and Private
 * Public key is shared with public
