@@ -6,7 +6,7 @@ This lecture focuses to cover the basic of cryptographic methods. Introduces to 
 
 ### Some theory
 
-**Cryptography
+**Cryptography**
 
 Practice of techniques to ensure secure communication in the presence of adversary behaviour
 
@@ -21,7 +21,7 @@ Security should not rely on secret methods, but rather on secret information.
 
 Meaning: we should not focus on creating secure/closed channels but instead focus on ensuring the security of data that is transferred through these channels.
 
-**Encryption 
+**Encryption**
 
 When we’re encrypting a message, plaintext refers to the unencrypted message and ciphertext to the encrypted message. A cipher is therefore composed of two functions: encryption turns a plaintext into a ciphertext, and decryption turns a ciphertext back into a plaintext.
 
