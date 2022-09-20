@@ -81,7 +81,7 @@ A hash function is a function that converts any arbitrary data into a random, fi
 * Keccak
 * Blake2
 
-> > show exapmle in online hash tool and mention diffrences 
+> show exapmle in online hash tool and mention diffrences 
 
 ## Encryption methods
 
