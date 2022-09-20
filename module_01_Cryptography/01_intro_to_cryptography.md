@@ -24,7 +24,8 @@ Meaning: we should not focus on creating secure/closed channels but instead focu
 **Encryption**
 
 <em>plaintext:</em> unencrypted message 
-<em>ciphertext:</em> encrypted message. 
+
+<em>ciphertext:</em> encrypted message
 
 A cipher is therefore composed of two functions: <em>encryption</em> turns a plaintext into a ciphertext, and <em>decryption</em> turns a ciphertext back into a plaintext.
 
