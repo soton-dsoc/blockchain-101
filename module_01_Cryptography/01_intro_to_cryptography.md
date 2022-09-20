@@ -29,6 +29,8 @@ Meaning: we should not focus on creating secure/closed channels but instead focu
 
 A cipher is therefore composed of two functions: <em>encryption</em> turns a plaintext into a ciphertext, and <em>decryption</em> turns a ciphertext back into a plaintext.
 
+> briefly explain end demonstrate an exampe of Caesar Cipher
+
 ### Applications
 
 - End-to-end Encryption
