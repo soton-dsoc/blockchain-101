@@ -43,9 +43,12 @@ A cipher is therefore composed of two functions: <em>encryption</em> turns a pla
 
 A hash function is a function that converts any arbitrary data into a random, fixed sized data. One can see it as a way to generate a unique fingerprint for any arbitrary data. The output of a hash function, the generated fingerprint, is usually referred to as hash values, hash codes, digests, or simply hashes. 
 
+> show exapmle in online hash tool
+
 ### Properties to ensure security
 
-**Pre-image attack resistance:** It should be infeasible to come up with another data that hashes to the same value as the previous data. In other words the function is one-way only.
+**Determinism:** — A hash algorithm should be deterministic, meaning that it always gives you an output of identical size regardless of the size of the input you started with.
+**Pre-image attack resistance:** It should be infeasible to reverse a hash value to recover the original input plaintext message. Hence, the concept of hashes being irreversible, one-way functions.
 **Second pre-image resistance:** It should be practically impossible to come up with the data that results in the same hash given that we know the original value and the hash.
 **Collision resistance:** It should be infeasible to come up with different data that results in the same hash
 
@@ -74,6 +77,8 @@ A hash function is a function that converts any arbitrary data into a random, fi
 * SHA3
 * Keccak
 * Blake2
+
+> > show exapmle in online hash tool and mention diffrences 
 
 ## Encryption methods
 
