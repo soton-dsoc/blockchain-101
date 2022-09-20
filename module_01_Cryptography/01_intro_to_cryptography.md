@@ -23,7 +23,10 @@ Meaning: we should not focus on creating secure/closed channels but instead focu
 
 **Encryption**
 
-When we’re encrypting a message, <em>plaintext</em> refers to the unencrypted message and ciphertext to the encrypted message. A cipher is therefore composed of two functions: encryption turns a plaintext into a ciphertext, and decryption turns a ciphertext back into a plaintext.
+<em>plaintext:</em> unencrypted message 
+<em>ciphertext:</em> encrypted message. 
+
+A cipher is therefore composed of two functions: <em>encryption</em> turns a plaintext into a ciphertext, and <em>decryption</em> turns a ciphertext back into a plaintext.
 
 ### Applications
 
