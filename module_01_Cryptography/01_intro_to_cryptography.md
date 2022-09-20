@@ -7,7 +7,10 @@ This lecture focuses to cover the basic of cryptographic methods. Introduces to 
 ### Some theory
 
 **Boring definition:**
-> Practice of techniques to ensure secure communication in the presence of adversary behaviour
+
+*** Cryptography
+
+Practice of techniques to ensure secure communication in the presence of adversary behaviour
 
 In modern systems, cryptography is applied within the network and storage context.
 
@@ -15,9 +18,14 @@ Why?
 
 Any medium of communication can be intercepted. Hence, we need to ensure that no sensitive information can be maliciously read.
 This leads to the the principle behind closed vs open channels described by Kerckhoff:
->  Security should not rely on secret methods, but rather on secret information.
+
+Security should not rely on secret methods, but rather on secret information.
 
 Meaning: we should not focus on creating secure/closed channels but instead focus on ensuring the security of data that is transferred through these channels.
+
+*** Encryption 
+
+When we’re encrypting a message, plaintext refers to the unencrypted message and ciphertext to the encrypted message. A cipher is therefore composed of two functions: encryption turns a plaintext into a ciphertext, and decryption turns a ciphertext back into a plaintext.
 
 ### Applications
 
