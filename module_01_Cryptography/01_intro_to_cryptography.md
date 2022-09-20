@@ -21,16 +21,6 @@ Security should not rely on secret methods, but rather on secret information.
 
 Meaning: we should not focus on creating secure/closed channels but instead focus on ensuring the security of data that is transferred through these channels.
 
-**Encryption**
-
-<em>plaintext:</em> unencrypted message 
-
-<em>ciphertext:</em> encrypted message
-
-A cipher is therefore composed of two functions: <em>encryption</em> turns a plaintext into a ciphertext, and <em>decryption</em> turns a ciphertext back into a plaintext.
-
-> briefly explain end demonstrate an exampe of Caesar Cipher
-
 ### Applications
 
 - End-to-end Encryption
@@ -85,10 +75,22 @@ A hash function is a function that converts any arbitrary data into a random, fi
 
 ## Encryption methods
 
-Encryption is a technique of obfuscating data that can not be interpreted by malicious actor.
+Encryption is the principal application of cryptography; it makes data incomprehensible in order to ensure its confidentiality.
 
-- Symmetric
-- Asymmetric
+Encryption uses an algorithm called a <em>cipher</em> and a secret value called the <em>key</em>
+
+<em>plaintext:</em> unencrypted message 
+
+<em>ciphertext:</em> encrypted message
+
+A cipher is therefore composed of two functions: <em>encryption</em> turns a plaintext into a ciphertext, and <em>decryption</em> turns a ciphertext back into a plaintext.
+
+- Symmetric encryption: the key used to decrypt is the same as the key used to encrypt
+
+> briefly explain end demonstrate an exampe of Caesar Cipher
+
+
+- Asymmetric encryption: the key used to decrypt is different from the key used to encrypt
 
 ### Symmetric encryption
 
