@@ -48,8 +48,11 @@ A hash function is a function that converts any arbitrary data into a random, fi
 ### Properties to ensure security
 
 **Determinism:** — A hash algorithm should be deterministic, meaning that it always gives you an output of identical size regardless of the size of the input you started with.
+
 **Pre-image attack resistance:** It should be infeasible to reverse a hash value to recover the original input plaintext message. Hence, the concept of hashes being irreversible, one-way functions.
+
 **Second pre-image resistance:** It should be practically impossible to come up with the data that results in the same hash given that we know the original value and the hash.
+
 **Collision resistance:** It should be infeasible to come up with different data that results in the same hash
 
 *There can be non-cryptographic hash functions* that are not one-way and are suspectable to the attack listed above.
