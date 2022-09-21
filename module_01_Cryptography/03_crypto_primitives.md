@@ -1,12 +1,37 @@
 # Lecture 3: Cryptography Primitives & Data Structures
 
-The main of a lecture is to introduce students to merkalised storage solutions and how they are used in the context of data verification.
+The main goal of this lecture is to introduce students to merkalised storage solutions and how they are used in the context of data verification.
 
-## Binary tree
+## Problem to address
+
+Consider a modern NoSQL database, such as a key-value storage distributed over several nodes, where the size of the values is arbitrarily large.
+- For fault tolerance and load balancing reasons, each key-value pair is replicated over more nodes. 
+- Over time, nodes fail and may recover or not, and new nodes can be added -> data inconsistencies may arise.
+- A re-synch mechanism is therefore required to restore data consistency.
+> Given the extremely large size of stored data (in the order of TBs, at the very least), how can we efficiently identify out-of-synch key-value entries?
+
+_This problem is also highly relevant to blockchain, since the ledger of transactions is replicated over many nodes and is very large (more than 400GB in Bitcoin) and the existence and integrity of a given transaction in the ledger is a common operation to perform_
+
+## Outline
+
+Merkle tree is a data structure that allows to store in a compact way information about the content of a set of data items. This data structure can be efficiently used to perform integrity checks on those data items. This lecture covers the following topics.
+- __Tree data structure__. Brief introduction to the basics of trees as data structures.
+- __Merkle tree__. What it looks like and how to build one.
+- __Using Merkle tree__. How to verify a data item using a Merkle tree.
+- __Merkle trees in blockchain__. What is the role of Merkel trees in a blockchain?
+
+## Tree data structure
 
 To understand merkalised storage solutions we need to understand the very basics underneath it.
 
-> Binary Tree is defined as a Tree data structure with at most 2 children.
+Topics to cover
+- why data structures?
+- Tree as a data structure - figure with n-ary tree to introduce basic jargon
+- Binary tree - properties
+- Example of binary search tree
+
+<!--
+> Binary tree is defined as a tree data structure with at most 2 children.
 
 - Max 2 children
 - No cycles
@@ -18,11 +43,12 @@ To understand merkalised storage solutions we need to understand the very basics
 - Search complexity: `O(log n)`
 - Insert complexity: `O(log n)`
 - Delete complexity: `O(log n)`
+-->
 
-(i.e.) For a balances binary tree with 64 elements, it would on average take 8 steps to search, insert or delete an element.
+E.g., for a balanced binary tree with 64 elements, it would take at most 8 steps to search an element.
 
 
-## Binary Merkle tree
+## Merkle tree
 
 Binary Merkle tree is a combination of hash function and binary tree.
 
@@ -45,10 +71,25 @@ we can only need half of hashes to be known.
 
 If we want to change any piece of data, the root must be recalculated.
 
+## Using Merkle tree
+
+Topics to cover
+- example to show how to use a Merkle tree to verify a data item
+- generalise operation
+- discussion on time and space complexity
+
+## Merkle trees in blockchain
+
+Topics to cover (very briefly)
+- blocks and transactions
+- verify a transaction using Merkle tree
+
+<!--
 ### Uses
 - IPFS for data storage verification and Distributed Hash Tables
 - Databases for data integrity
 - Blockchain, blocks data is encoded using merkle tree, the header usually stores the root
+-->
 
 ## Workshop
 
